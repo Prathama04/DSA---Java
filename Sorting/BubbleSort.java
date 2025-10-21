@@ -19,6 +19,7 @@ class BubbleSort{
             break;
     }
 }
+    //Method to print the array
     static void print(int arr[]){
         int n = arr.length;
         int i;
@@ -29,17 +30,19 @@ class BubbleSort{
 
 }
     public static void main(String args[]){
-        int n,i;
+        int n, i;
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number of elements in array: ");
         n=sc.nextInt();
-         int[] arr = new int[n];
+        int[] arr = new int[n];
         System.out.print("Enter the array: \n");
         for(i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
+
         bubblesort(arr, n);
         print(arr);
+        
         sc.close();
 
     }}
